@@ -3,6 +3,7 @@
 -- This PL/SQL block retrieves and displays the first name, last name, and salary 
 -- of employees who work in the same department(s) as any employee with the last 
 -- name 'Grant', excluding employees whose last name is 'Grant'.
+-- OBS: code 001 Oracle SQL altered 
 DECLARE
   CURSOR c_employees IS
     SELECT first_name, last_name, salary
