@@ -1,27 +1,20 @@
--- PL/SQL block to display the number of employees in specific departments
---
--- This script:
---   - Selects departments with IDs 10, 20, and 30.
---   - Counts the number of employees in each of these departments.
---   - Outputs the department ID, department name, and employee count for each.
---
--- OBS: code 001 Oracle SQL altered
-
+-- Source:
+-- https://livesql.oracle.com/next/
+-- This PL/SQL block retrieves and displays the first name, last name, and salary 
+-- of employees who work in the same department(s) as any employee with the last 
+-- name 'Grant', excluding employees whose last name is 'Grant'.
 DECLARE
-    CURSOR dept_cur IS
-        SELECT d.department_id, d.department_name, COUNT(e.employee_id) AS employee_count
-        FROM departments d
-        INNER JOIN employees e ON d.department_id = e.department_id
-        WHERE d.department_id IN (10, 20, 30)
-        GROUP BY d.department_id, d.department_name
-        ORDER BY d.department_id ASC;
+  CURSOR c_employees IS
+    SELECT first_name, last_name, salary
+    FROM hr.employees
+    WHERE department_id IN (
+              SELECT department_id
+              FROM hr.employees
+              WHERE last_name = 'Grant')
+      AND last_name != 'Grant';
 BEGIN
-    FOR rec IN dept_cur LOOP
-        DBMS_OUTPUT.PUT_LINE(
-            'Department ID: ' || rec.department_id ||
-            ', Name: ' || rec.department_name ||
-            ', Employee Count: ' || rec.employee_count
-        );
-    END LOOP;
+  FOR rec IN c_employees LOOP
+    DBMS_OUTPUT.PUT_LINE('First Name: ' || rec.first_name || ', Last Name: ' || rec.last_name || ', Salary: ' || rec.salary);
+  END LOOP;
 END;
 /

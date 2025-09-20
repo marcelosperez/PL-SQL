@@ -1,0 +1,50 @@
+
+First Name: Matthew, Last Name: Weiss, Salary: 8000
+First Name: Adam, Last Name: Fripp, Salary: 8200
+First Name: Payam, Last Name: Kaufling, Salary: 7900
+First Name: Shanta, Last Name: Vollman, Salary: 6500
+First Name: Kevin, Last Name: Mourgos, Salary: 5800
+First Name: Julia, Last Name: Nayer, Salary: 3200
+First Name: Irene, Last Name: Mikkilineni, Salary: 2700
+First Name: James, Last Name: Landry, Salary: 2400
+First Name: Steven, Last Name: Markle, Salary: 2200
+First Name: Laura, Last Name: Bissot, Salary: 3300
+First Name: Mozhe, Last Name: Atkinson, Salary: 2800
+First Name: James, Last Name: Marlow, Salary: 2500
+First Name: TJ, Last Name: Olson, Salary: 2100
+First Name: Jason, Last Name: Mallin, Salary: 3300
+First Name: Michael, Last Name: Rogers, Salary: 2900
+First Name: Ki, Last Name: Gee, Salary: 2400
+First Name: Hazel, Last Name: Philtanker, Salary: 2200
+First Name: Renske, Last Name: Ladwig, Salary: 3600
+First Name: Stephen, Last Name: Stiles, Salary: 3200
+First Name: John, Last Name: Seo, Salary: 2700
+First Name: Joshua, Last Name: Patel, Salary: 2500
+First Name: Trenna, Last Name: Rajs, Salary: 3500
+First Name: Curtis, Last Name: Davies, Salary: 3100
+First Name: Randall, Last Name: Matos, Salary: 2600
+First Name: Peter, Last Name: Vargas, Salary: 2500
+First Name: Winston, Last Name: Taylor, Salary: 3200
+First Name: Jean, Last Name: Fleaur, Salary: 3100
+First Name: Martha, Last Name: Sullivan, Salary: 2500
+First Name: Girard, Last Name: Geoni, Salary: 2800
+First Name: Nandita, Last Name: Sarchand, Salary: 4200
+First Name: Alexis, Last Name: Bull, Salary: 4100
+First Name: Julia, Last Name: Dellinger, Salary: 3400
+First Name: Anthony, Last Name: Cabrio, Salary: 3000
+First Name: Kelly, Last Name: Chung, Salary: 3800
+First Name: Jennifer, Last Name: Dilly, Salary: 3600
+First Name: Timothy, Last Name: Venzl, Salary: 2900
+First Name: Randall, Last Name: Perkins, Salary: 2500
+First Name: Sarah, Last Name: Bell, Salary: 4000
+First Name: Britney, Last Name: Everett, Salary: 3900
+First Name: Samuel, Last Name: McLeod, Salary: 3200
+First Name: Vance, Last Name: Jones, Salary: 2800
+First Name: Alana, Last Name: Walsh, Salary: 3100
+First Name: Kevin, Last Name: Feeney, Salary: 3000
+First Name: Donald, Last Name: OConnell, Salary: 2600
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.014
