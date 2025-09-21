@@ -1,0 +1,67 @@
+=== ORACLE STRING AGGREGATION TUTORIAL ===
+Teaching LISTAGG() - Oracle's version of STRING_AGG()
+
+Example 1: Getting all unique job titles in one string
+All Job Titles: Accountant, Administration Assistant, Administration Vice President, Finance Manager, Human Resources Representative, Marketing Manager, Marketing Representative, President, Programmer, Public Accountant, Purchasing Clerk, Purchasing Manager, Sales Manager, Sales Representative, Shipping Clerk, Stock Clerk, Stock Manager
+
+Example 2: Employees grouped by department using LISTAGG
+LISTAGG syntax: LISTAGG(column, 'delimiter') WITHIN GROUP (ORDER BY column)
+
+Department: Accounting (2 employees)
+Employees: William Gietz, Shelley Higgins
+-----------------------------------
+Department: Administration (1 employees)
+Employees: Jennifer Whalen
+-----------------------------------
+Department: Executive (3 employees)
+Employees: Lex Garcia, Steven King, Neena Yang
+-----------------------------------
+Department: Finance (6 employees)
+Employees: John Chen, Daniel Faviet, Nancy Gruenberg, Ismael Sciarra, Luis Popp, Jose Manuel Urman
+-----------------------------------
+Department: Human Resources (1 employees)
+Employees: Susan Jacobs
+-----------------------------------
+Department: IT (5 employees)
+Employees: Alexander James, Bruce Miller, Diana Nguyen, Valli Jackson, David Williams
+-----------------------------------
+Department: Marketing (2 employees)
+Employees: Michael Martinez, Pat Davis
+-----------------------------------
+Department: Purchasing (6 employees)
+Employees: Shelli Baida, Sigal Tobias, Guy Himuro, Karen Colmenares, Alexander Khoo, Den Li
+-----------------------------------
+Department: Sales (34 employees)
+Employees: Sundar Ande, Amit Banda, Sarah Bell, Laura Bissot, Harrison Bloom, Alexis Bull, Anthony Cabrio, Nanette Cambrault, Kelly Chung, Karen Colmenares, Curtis Davies, Jennifer Dilly, Louise Doran, Britney Everett, Kevin Feeney, Jean Fleaur, Adam Fripp, Ki Gee, Girard Geoni, Douglas Grant, Guy Himuro, Vance Jones, Payam Kaufling, Janette King, Renske Ladwig, James Landry, David Lee, Jason Mallin, James Marlow, Steven Markle, Randall Matos, Mattea Marvins, Allan McEwen, Samuel McLeod, Irene Mikkilineni, Kevin Mourgos, Julia Nayer, Donald OConnell, TJ Olson, Christopher Olsen, Lisa Ozer, Joshua Patel, Randall Perkins, Hazel Philtanker, Trenna Rajs, Michael Rogers, Nandita Sarchand, John Seo, Sarath Sewall, Lindsey Smith, Stephen Stiles, Patrick Sully, Martha Sullivan, Winston Taylor, Sean Tucker, Oliver Tuvault, Peter Vargas, Timothy Venzl, Clara Vishney, Shanta Vollman, Alana Walsh, Matthew Weiss, Eleni Zlotkey
+-----------------------------------
+Department: Shipping (45 employees)
+Employees: Mozhe Atkinson, Shelli Baida, Amit Banda, Laura Bissot, Harrison Bloom, Hermann Brown, Anthony Cabrio, Nanette Cambrault, Kelly Chung, Curtis Davies, Pat Davis, Jennifer Dilly, Louise Doran, Britney Everett, Kevin Feeney, Jean Fleaur, Adam Fripp, Ki Gee, Girard Geoni, Douglas Grant, Danielle Greene, Guy Himuro, Vance Jones, Payam Kaufling, Janette King, Renske Ladwig, James Landry, David Lee, Den Li, Jason Mallin, James Marlow, Steven Markle, Randall Matos, Mattea Marvins, Allan McEwen, Samuel McLeod, Irene Mikkilineni, Kevin Mourgos, Julia Nayer, Donald OConnell, TJ Olson, Christopher Olsen, Lisa Ozer, Joshua Patel, Randall Perkins, Hazel Philtanker, Trenna Rajs, Michael Rogers, Nandita Sarchand, John Seo, Sarath Sewall, Lindsey Smith, Stephen Stiles, Patrick Sully, Martha Sullivan, Sigal Tobias, Sean Tucker, Oliver Tuvault, Peter Vargas, Timothy Venzl, Clara Vishney, Shanta Vollman, Alana Walsh, Matthew Weiss, Eleni Zlotkey
+-----------------------------------
+
+Example 3: Using different delimiters and formatting data
+Here we show employees with salaries, using pipe (|) as delimiter:
+
+Job: Accountant
+Employees with Salaries: William ($8300) | Shelley ($12008)
+-----------------------------------
+Job: Programmer  
+Employees with Salaries: Diana ($4800) | Valli ($4800) | David ($6400) | Alexander ($9000) | Bruce ($6000)
+-----------------------------------
+Job: Sales Representative
+Employees with Salaries: Sarah ($4000) | Britney ($3900) | Kelly ($3800) | Jennifer ($3600) | Renske ($3600) | Trenna ($3500) | Julia ($3400) | Jason ($3300) | Laura ($3300) | Winston ($3200) | Stephen ($3200) | Julia ($3200) | Samuel ($3200) | Curtis ($3100) | Jean ($3100) | Alana ($3100) | Anthony ($3000) | Kevin ($3000) | Michael ($2900) | Timothy ($2900) | Girard ($2800) | Vance ($2800) | Mozhe ($2800) | John ($2700) | Irene ($2700) | Donald ($2600) | Randall ($2600) | Joshua ($2500) | Randall ($2500) | James ($2500) | Peter ($2500) | Martha ($2500) | Ki ($2400) | James ($2400) | Steven ($2200) | Hazel ($2200) | TJ ($2100)
+-----------------------------------
+
+=== KEY LEARNING POINTS ===
+1. Oracle uses LISTAGG() instead of STRING_AGG()
+2. Always include WITHIN GROUP (ORDER BY ...) clause
+3. Use any delimiter: comma, pipe, semicolon, etc.
+4. Combine with GROUP BY for powerful data summarization
+5. Format data before aggregating for better readability
+6. Use DISTINCT to avoid duplicate values in the list
+
+Common uses: Creating reports, summary lists, CSV exports
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.018
