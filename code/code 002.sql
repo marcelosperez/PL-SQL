@@ -1,9 +1,8 @@
 -- Source:
 -- https://livesql.oracle.com/next/
--- This PL/SQL block retrieves hire date information from the HR.EMPLOYEES table,
--- and prints it using DBMS_OUTPUT.
--- It demonstrates the use of cursors, date functions, and string concatenation in PL/SQL.
--- Ensure that server output is enabled to see the results
+-- This PL/SQL block demonstrates the use of cursors, date functions, 
+-- and string concatenation in PL/SQL.
+-- Ensure that server output is enabled to see the results.
 SET SERVEROUTPUT ON;
 
 DECLARE
