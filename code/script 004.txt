@@ -1,0 +1,12 @@
+Customer: John Smith, Payment Amount: 15.99
+Customer: Sarah Johnson, Payment Amount: 12.50
+Customer: Michael Brown, Payment Amount: 8.75
+Customer: Lisa Davis, Payment Amount: 6.25
+Customer: Robert Wilson, Payment Amount: 4.99
+Customer: Jennifer Garcia, Payment Amount: 3.50
+Customer: David Martinez, Payment Amount: 2.99
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.015
