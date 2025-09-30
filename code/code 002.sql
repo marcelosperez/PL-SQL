@@ -19,15 +19,6 @@ DECLARE
             HR.EMPLOYEES
         ORDER BY
             EMPLOYEE_ID;
-
-    -- Variables to hold column data
-    v_employee_id HR.EMPLOYEES.EMPLOYEE_ID%TYPE;
-    v_first_name  HR.EMPLOYEES.FIRST_NAME%TYPE;
-    v_last_name   HR.EMPLOYEES.LAST_NAME%TYPE;
-    v_hire_year   NUMBER;
-    v_hire_month  VARCHAR2(20);
-    v_hire_day    NUMBER;
-    v_hire_day2   VARCHAR2(10);
 BEGIN
     FOR emp_rec IN emp_cur LOOP
         DBMS_OUTPUT.PUT_LINE(
